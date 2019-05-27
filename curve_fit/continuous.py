@@ -25,7 +25,7 @@ class Continuous:
         if self.all is None:
             self.all = np.array(x)
         else:
-            self.all = np.concatenate([self.x, x])
+            self.all = np.concatenate([self.all, x])
         transformed_x = dmatrix("cr(x,df={})".format(self.k), {"x": self.all}, return_type='dataframe')[-n:]
         return transformed_x
 
