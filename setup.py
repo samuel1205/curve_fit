@@ -12,6 +12,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open("requirements.txt", "r") as fh:
+    requires = fh.read().split()
+
 setuptools.setup(
     name="curve_fit",
     version="0.0.1",
@@ -20,8 +23,9 @@ setuptools.setup(
     description="Curve fit",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    packages=setuptools.find_packages(),
+    url="https://github.com/samuel1205/curve_fit.git",
+    packages=["curve_fit"],
+    install_requires=requires,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
