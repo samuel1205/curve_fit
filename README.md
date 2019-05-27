@@ -15,7 +15,7 @@ Usage
 from curve_fit import continuous
 import numpy as np
 
-x = np.arange(-10, 10, 0.1)
+x = np.arange(-10, 10, 0.2)
 noise = np.random.normal(-0.1, 0.1, len(x))
 y = np.sin(x) + noise
 
