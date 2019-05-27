@@ -9,17 +9,17 @@
 import setuptools
 
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
 
 setuptools.setup(
     name="curve_fit",
-    version="0.0.4",
+    version="0.0.5",
     author="SamuelChan",
     author_email="samuelchan1205@gmail.com",
     description="Curve fit",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
+    # long_description=long_description,
+    # long_description_content_type="text/markdown",
     url="https://github.com/samuel1205/curve_fit.git",
     packages=["curve_fit"],
     install_requires=[
