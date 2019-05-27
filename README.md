@@ -21,8 +21,8 @@ y = np.sin(x) + noise
 
 # k: complexity, defaultk=3
 c = continuous.Continuous(k=10)
-model = c.fit(x, y)
-pred = model.predict(x)
+c.fit(x, y)
+pred = c.predict(x)
 ```
 
 Example
