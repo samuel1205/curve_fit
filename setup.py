@@ -14,7 +14,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="curve_fit",
-    version="0.0.2",
+    version="0.0.3",
     author="SamuelChan",
     author_email="samuelchan1205@gmail.com",
     description="Curve fit",
