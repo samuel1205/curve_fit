@@ -22,9 +22,10 @@ class Continuous:
         x = np.array(x)
         assert x.ndim == 1
         n = x.shape[0]
-        if not self.all:
+        if self.all is None:
             self.all = np.array(x)
-        self.all = np.concatenate([self.x, x])
+        else:
+            self.all = np.concatenate([self.x, x])
         transformed_x = dmatrix("cr(x,df={})".format(self.k), {"x": self.all}, return_type='dataframe')[-n:]
         return transformed_x
 
